@@ -22,7 +22,7 @@ export default function SectionNewArrival() {
             name:        p.name,
             image:       p.images?.[0] || null,
             price:       p.retailPrice      ?? 0,
-            quantity:    p.quantityPerPack            ?? 0,
+            quantity:    p.quantityPerPack  ?? 0,
             slot:        p.slot             ?? 0,
             sizes:       (p.size ?? []).map(s => s?.name ?? s),
             sets:        (p.set  ?? []).map(s => s?.name ?? s),
