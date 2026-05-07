@@ -21,7 +21,7 @@ export default function SectionNewArrival() {
           // FIX PRICE ISSUE
           price: p.retailPrice ?? p.wholesalePrice ?? 0,
 
-          quantity: p.stock ?? 0,
+          quantity: p.quantityPerPack ?? 0,
           slot: p.slot ?? 0,
 
           // FIX POPULATED OBJECTS (avoid [object Object])
